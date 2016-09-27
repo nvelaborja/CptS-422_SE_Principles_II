@@ -1,0 +1,7 @@
+/home/nathan/Documents/CptS422/HW1/HW1/HW1ConsoleTests/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/nathan/Documents/CptS422/HW1/HW1/HW1ConsoleTests/bin/Debug/HW1.dll
+/home/nathan/Documents/CptS422/HW1/HW1/HW1ConsoleTests/bin/Debug/HW1.dll.mdb
+/home/nathan/Documents/CptS422/HW1/HW1/HW1ConsoleTests/bin/Debug/HW1ConsoleTests.exe.mdb
+/home/nathan/Documents/CptS422/HW1/HW1/HW1ConsoleTests/bin/Debug/HW1ConsoleTests.exe
+/home/nathan/Documents/CptS422/HW1/HW1/HW1ConsoleTests/obj/Debug/HW1ConsoleTests.exe
+/home/nathan/Documents/CptS422/HW1/HW1/HW1ConsoleTests/obj/Debug/HW1ConsoleTests.exe.mdb

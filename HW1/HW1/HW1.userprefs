@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="HW1ConsoleTests/HW1ConsoleTests.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HW1/NumberedTextWriter.cs">
+    <Files>
+      <File FileName="HW1/NumberedTextWriter.cs" Line="40" Column="81" />
+      <File FileName="HW1/IndexedNumsStream.cs" Line="114" Column="74" />
+      <File FileName="HW1ConsoleTests/Program.cs" Line="1" Column="1" />
+      <File FileName="Lab1UT/Test.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

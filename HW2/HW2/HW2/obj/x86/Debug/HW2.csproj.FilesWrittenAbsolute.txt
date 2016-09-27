@@ -1,0 +1,5 @@
+/home/nathan/Documents/CptS422/HW2/HW2/HW2/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/nathan/Documents/CptS422/HW2/HW2/HW2/bin/Debug/HW2.exe.mdb
+/home/nathan/Documents/CptS422/HW2/HW2/HW2/bin/Debug/HW2.exe
+/home/nathan/Documents/CptS422/HW2/HW2/HW2/obj/x86/Debug/HW2.exe
+/home/nathan/Documents/CptS422/HW2/HW2/HW2/obj/x86/Debug/HW2.exe.mdb

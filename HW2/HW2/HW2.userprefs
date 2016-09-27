@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="HW2/HW2.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HW2/PCQueue.cs">
+    <Files>
+      <File FileName="HW2/Program.cs" Line="17" Column="28" />
+      <File FileName="HW2/PCQueue.cs" Line="64" Column="41" />
+      <File FileName="HW2/ThreadPoolSleepSorter.cs" Line="62" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
