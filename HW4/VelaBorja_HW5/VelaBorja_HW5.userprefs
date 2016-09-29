@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="VelaBorja_HW5/VelaBorja_HW5.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VelaBorja_HW5/ConcatStream.cs">
+    <Files>
+      <File FileName="VelaBorja_HW5/Program.cs" Line="13" Column="1" />
+      <File FileName="VelaBorja_HW5/ConcatStream.cs" Line="6" Column="47" />
+      <File FileName="VelaBorja_HW5/WebRequest.cs" Line="1" Column="1" />
+      <File FileName="VelaBorja_HW5/WebService.cs" Line="1" Column="1" />
+      <File FileName="VelaBorja_HW5/WebServer.cs" Line="1" Column="1" />
+      <File FileName="VelaBorja_HW5/DemoService.cs" Line="18" Column="55" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
