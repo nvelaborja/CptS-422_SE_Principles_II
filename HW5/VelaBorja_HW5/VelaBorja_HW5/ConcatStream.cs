@@ -28,13 +28,13 @@ namespace CS422
 			First = first;							// Save streams
 			Second = second;
 			length = -1;							// Store length as negative to let Property know it must query first/second stream for length
-			position = 0;							// Start position at 0
+			Position = 0;							// Start position at 0
 
 			// Make sure first stream has a set length, otherwise this class is useless and must throw an exception
 			try {
 				long testLength = First.Length;
 				testLength += 1;
-			} catch (Exception ex) {
+			} catch {
 				throw new ArgumentException ("First Stream in ConcatStream does not have specified length.");					
 			}
 		}
@@ -44,7 +44,7 @@ namespace CS422
 			First = first;							// Save streams
 			Second = second;
 			length = fixedLength;					// Let Property know that we will return this value for length, not query streams
-			position = 0;							// Start position at 0
+			Position = 0;							// Start position at 0
 		}
 
 		public override bool CanRead {
@@ -134,18 +134,14 @@ namespace CS422
 					Position = Position + offset;
 					break;
 				case SeekOrigin.End:
-					throw new ArgumentException ("Cannot Seek from SeekOrigin.End");	// TODO: can be done if length was specified in constructor
+					if (length < 0) {			// If length was specified in constructor, we can do this
+						Position = Length + offset;
+					} else
+						throw new ArgumentException ("Cannot Seek from SeekOrigin.End");
 					break;
+				default:
+					throw new ArgumentException ("Error with SeekOrigin");
 			}
-
-			// Set relative positions for first and second stream
-			/*if (Position < First.Length) {
-				First.Position = Position;
-				Second.Position = 0;
-			} else {
-				First.Position = First.Length - 1;
-				Second.Position = Position - First.Length;
-			}*/
 
 			return Position;
 		}
@@ -168,16 +164,25 @@ namespace CS422
 
 		public override void Write (byte[] buffer, int offset, int count)
 		{
+			// 		0	1	2	3	4	5	6	7	8	9
+			//						P = 4							Length = 10;
+			// 		Room Left = Length - Position = 10 - 4 =  6
+
 			if (!CanWrite)
 				return 0;
 			
-			int bytesWritten = First.Write (buffer, offset, count);
 
-			if (bytesWritten < count) {
-				bytesWritten += Second.Read (buffer, offset + bytesWritten, count - bytesWritten);
+			// First try writing to the first stream
+			int roomLeft = First.Length - First.Position;			// Record how much is expected to be written to first stream, but really just amount of room left in first stream
+			First.Write (buffer, offset, count);					// Write to first stream, stream will stop writing when runs out of room
+
+			// Then write to the second stream if there is any writing left to be done
+			if (roomLeft < count) {
+				Second.Write (buffer, offset + roomLeft, count - roomLeft);
 			}
 
-			return bytesWritten;
+			// We don't know how much was actually written to the streams, so we need to reset position based on streams
+			Position = First.Position + Second.Position;
 		}
 	}
 }

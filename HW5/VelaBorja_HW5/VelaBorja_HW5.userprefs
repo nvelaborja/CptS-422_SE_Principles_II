@@ -1,8 +1,11 @@
 ﻿<Properties StartupItem="VelaBorja_HW5/VelaBorja_HW5.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VelaBorja_HW5/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VelaBorja_HW5/NoSeekMemoryStream.cs">
     <Files>
-      <File FileName="VelaBorja_HW5/Program.cs" Line="1" Column="1" />
+      <File FileName="VelaBorja_HW5/Program.cs" Line="1" Column="14" />
+      <File FileName="VelaBorja_HW5/ConcatStream.cs" Line="182" Column="6" />
+      <File FileName="VelaBorja_HW5/NoSeekMemoryStream.cs" Line="87" Column="12" />
+      <File FileName="HW5_UnitTests/Test.cs" Line="9" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
