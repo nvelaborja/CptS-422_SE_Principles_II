@@ -1,0 +1,5 @@
+/home/nathan/Documents/CptS-422_SE_Principles_II/HW6/VelaBorja_HW6/VelaBorja_HW6/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/nathan/Documents/CptS-422_SE_Principles_II/HW6/VelaBorja_HW6/VelaBorja_HW6/bin/Debug/VelaBorja_HW6.exe.mdb
+/home/nathan/Documents/CptS-422_SE_Principles_II/HW6/VelaBorja_HW6/VelaBorja_HW6/bin/Debug/VelaBorja_HW6.exe
+/home/nathan/Documents/CptS-422_SE_Principles_II/HW6/VelaBorja_HW6/VelaBorja_HW6/obj/x86/Debug/VelaBorja_HW6.exe
+/home/nathan/Documents/CptS-422_SE_Principles_II/HW6/VelaBorja_HW6/VelaBorja_HW6/obj/x86/Debug/VelaBorja_HW6.exe.mdb

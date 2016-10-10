@@ -1,7 +1,7 @@
 ﻿/****************************************************\
  * 		Nathan VelaBorja
  * 		September 28, 2016
- * 		CptS 422 HW 5
+ * 		CptS 422 HW 6
  *		This assignment extends the web server from HW3
  *			to have proper concurrency and the ability
  *			to support web services/apps on top of the
@@ -127,20 +127,20 @@ namespace CS422
 				throw new NotSupportedException ("The concat stream in this instance does not support seeking.");
 
 			switch (origin) {
-				case SeekOrigin.Begin:
-					Position = offset;
-					break;
-				case SeekOrigin.Current:
-					Position = Position + offset;
-					break;
-				case SeekOrigin.End:
-					if (length > -1) {			// If length was specified in constructor, we can do this
-						Position = Length + offset;
-					} else
-						throw new ArgumentException ("Cannot Seek from SeekOrigin.End");
-					break;
-				default:
-					throw new ArgumentException ("Error with SeekOrigin");
+			case SeekOrigin.Begin:
+				Position = offset;
+				break;
+			case SeekOrigin.Current:
+				Position = Position + offset;
+				break;
+			case SeekOrigin.End:
+				if (length > -1) {			// If length was specified in constructor, we can do this
+					Position = Length + offset;
+				} else
+					throw new ArgumentException ("Cannot Seek from SeekOrigin.End");
+				break;
+			default:
+				throw new ArgumentException ("Error with SeekOrigin");
 			}
 
 			return Position;
@@ -148,7 +148,7 @@ namespace CS422
 
 		public override int Read (byte[] buffer, int offset, int count)
 		{
-  			if (!CanRead)
+			if (!CanRead)
 				throw new NotSupportedException ("The concat stream in this instance does not support reading.");
 
 			int bytesRead = 0;
@@ -174,7 +174,7 @@ namespace CS422
 
 			if (!CanWrite)
 				throw new NotSupportedException ("The concat stream in this instance does not support writing.");
-			
+
 
 			// First try writing to the first stream
 			long roomLeft = First.Length - First.Position;			// Record how much is expected to be written to first stream, but really just amount of room left in first stream
@@ -186,7 +186,7 @@ namespace CS422
 			}
 
 			// We don't know how much was actually written to the streams, so we need to reset position based on streams
-			//Position = First.Position + Second.Position;
+			Position = First.Position + Second.Position;
 		}
 	}
 }

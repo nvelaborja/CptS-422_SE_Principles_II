@@ -15,25 +15,8 @@ namespace VelaBorja_HW5
 			//TestNoSeekMemoryStream();
 			//TestTwoMemoryStreams();
 			//SeekTest();
-			//RNGTest();
-
-			byte[] buffer = new byte[1024];
-			byte[] buffer2 = new byte[1024];
-			MemoryStream stream1 = new MemoryStream (buffer);
-			MemoryStream stream2 = new MemoryStream (buffer2);
-			ConcatStream cstream = new ConcatStream (stream1, stream2);
-
-			byte[] writeBuffer = System.Text.Encoding.Unicode.GetBytes ("Poop");
-
-			cstream.Write (writeBuffer, 0, writeBuffer.Length);
-
-			byte[] readBuffer = new byte[1024];
-
-			cstream.Seek (0, SeekOrigin.Begin);
-
-			int bytesRead = cstream.Read (readBuffer, 0, 8);
-			PrintBytes ("readBuffer", readBuffer);
-  		}
+			RNGTest();
+		}
 
 		private static void RNGTest()
 		{

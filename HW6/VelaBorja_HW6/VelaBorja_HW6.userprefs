@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="VelaBorja_HW6/VelaBorja_HW6.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VelaBorja_HW6/WebRequest.cs">
+    <Files>
+      <File FileName="VelaBorja_HW6/Program.cs" Line="14" Column="45" />
+      <File FileName="VelaBorja_HW6/ConcatStream.cs" Line="1" Column="1" />
+      <File FileName="VelaBorja_HW6/DemoService.cs" Line="1" Column="1" />
+      <File FileName="VelaBorja_HW6/WebServer.cs" Line="52" Column="6" />
+      <File FileName="VelaBorja_HW6/WebService.cs" Line="1" Column="1" />
+      <File FileName="VelaBorja_HW6/WebRequest.cs" Line="1" Column="1" />
+      <File FileName="../../HW2/HW2/HW2/ThreadPoolSleepSorter.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

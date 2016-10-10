@@ -186,7 +186,7 @@ namespace CS422
 			}
 
 			// We don't know how much was actually written to the streams, so we need to reset position based on streams
-			//Position = First.Position + Second.Position;
+			Position = First.Position + Second.Position;
 		}
 	}
 }
