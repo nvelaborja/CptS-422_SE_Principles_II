@@ -1,0 +1,87 @@
+Compiler Anatomy
+
+Lexer - tokenize input string
+Parser - Abstract syntax tree
+
+Statement Sequences - groups of tokens bound together by some logic
+
+Code:
+
+F1();
+void F1()
+{
+	string s = "Hello";
+	F2(s);
+}
+void F2(dynamic obj)
+{
+	WriteLine(obj.ToString());
+}
+
+																		Sequence
+																		  |
+											___________________________________________________________
+										  / 							  |								\
+									Function Call				Function Declaration (F1)			Function Declaration (F2)
+																		  |										\
+															_____________________________               ______________________________
+														   /              |              \             /              |                \
+													return void        0 param          body        return void    dynamic obj param   body
+																																		  \
+																																		 statement sequence
+																																		 	 \
+																																		 	 function call 
+																																		 	 name: Writeline
+																																		 	    \
+																																		 	    param list
+																																		 	     \
+																																		 	     member func: call
+																																		 	      /				\
+																																		 	  	s               string
+
+
+class PtNode
+{
+	Node[] GetChildren();
+}
+
+class FuncDecl : PtNode
+{
+	string Name;
+	PtNode body;
+}
+
+class FuncCallNode : PtNode
+{
+	string Name;
+	Node[] Params
+	string returnType
+	Node body
+}
+
+class MemberFuncCall : FuncCallNode
+{
+	string MemberObjName;
+}
+
+string[] GetFuncNames(PtNode? n)
+{
+	List<string> list = new ....
+	GetFuncNames(n, list);
+	return list.toarray();
+}
+
+GetFuncNames(PtNode n, List<string> list)
+{
+	if (n = null) return;
+
+	if (n is funcDecl)
+		list.Add(((FuncDecl) n).Name);
+	// Recurse on children
+}
+
+// Static unit test
+void Test (PTNode root)
+{
+	
+}
