@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW8", "HW8\HW8.csproj", "{7D4A389B-CBBA-40ED-A68A-6C03A7D54036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW8Tests", "HW8Tests\HW8Tests.csproj", "{EB88C9AD-B4AD-456B-92D5-EF09C56D9F8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D4A389B-CBBA-40ED-A68A-6C03A7D54036}.Debug|x86.ActiveCfg = Debug|x86
+		{7D4A389B-CBBA-40ED-A68A-6C03A7D54036}.Debug|x86.Build.0 = Debug|x86
+		{7D4A389B-CBBA-40ED-A68A-6C03A7D54036}.Release|x86.ActiveCfg = Release|x86
+		{7D4A389B-CBBA-40ED-A68A-6C03A7D54036}.Release|x86.Build.0 = Release|x86
+		{EB88C9AD-B4AD-456B-92D5-EF09C56D9F8E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB88C9AD-B4AD-456B-92D5-EF09C56D9F8E}.Debug|x86.Build.0 = Debug|Any CPU
+		{EB88C9AD-B4AD-456B-92D5-EF09C56D9F8E}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB88C9AD-B4AD-456B-92D5-EF09C56D9F8E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = HW8\HW8.csproj
+	EndGlobalSection
+EndGlobal
