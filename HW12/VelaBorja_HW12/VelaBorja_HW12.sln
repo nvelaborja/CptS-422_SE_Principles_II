@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelaBorja_HW12", "VelaBorja_HW12\VelaBorja_HW12.csproj", "{D585A634-684A-4A70-A0E3-657CD36E65C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW12_UnitTests", "HW12_UnitTests\HW12_UnitTests.csproj", "{B8A6FF6A-7D58-4883-AAB4-70F4E923FBA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8A6FF6A-7D58-4883-AAB4-70F4E923FBA7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B8A6FF6A-7D58-4883-AAB4-70F4E923FBA7}.Debug|x86.Build.0 = Debug|Any CPU
+		{B8A6FF6A-7D58-4883-AAB4-70F4E923FBA7}.Release|x86.ActiveCfg = Release|Any CPU
+		{B8A6FF6A-7D58-4883-AAB4-70F4E923FBA7}.Release|x86.Build.0 = Release|Any CPU
+		{D585A634-684A-4A70-A0E3-657CD36E65C9}.Debug|x86.ActiveCfg = Debug|x86
+		{D585A634-684A-4A70-A0E3-657CD36E65C9}.Debug|x86.Build.0 = Debug|x86
+		{D585A634-684A-4A70-A0E3-657CD36E65C9}.Release|x86.ActiveCfg = Release|x86
+		{D585A634-684A-4A70-A0E3-657CD36E65C9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = VelaBorja_HW12\VelaBorja_HW12.csproj
+	EndGlobalSection
+EndGlobal
